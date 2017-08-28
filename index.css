@@ -14,48 +14,73 @@ html {
     justify-content: space-between;
     
 }
+
 h1 {
     line-height: 10px;
     text-align: center;
     padding-left: 30px;
 }
+
 input{
     height: 50%;
     margin: 10px;
 }
 .main{
-    position: absolute;  
-    left: 0;
-    right: 0;
-    top: 50px;
-    bottom: 0;
-
+    position: relative;  
+    display: flex;
+    margin-top: 75px;
+    justify-content: space-between;
+    
 }
+
+.posts{
+    width: 60%;
+    max-width: 1080px;
+}
+
 .post{
     background-color:lightgrey;
-    position: relative;
+    position:relative;
     height: 80px;
     margin: 10px;
     display: flex;
     
 }
+
 .post img{
     height: 100%; 
     
 }
+
 h4, h6{
     line-height: 25px;
     margin: 0;
 }
+
 .post-image{
     margin: 4px;
     height: 90%;
     width: 70px;
     overflow: hidden;
 }
+
 a{
     color: red;
 }
+
+.header img{
+    height: 50px;
+    width: auto;
+    animation:thrust 1.5s linear infinite;
+}
+
+.cancer-ads{
+    width: 40%;
+    background: blue;
+    position: relative;
+    max-width: 720px;
+}
+
 @keyframes thrust{
     0%{
         transform:translateX(-100px) rotate(60deg);
@@ -72,9 +97,4 @@ a{
     100%{
         transform:translateX(-100px) rotate(60deg);
     }
-}
-.header img{
-    height: 50px;
-    width: auto;
-    animation:thrust 1.5s linear infinite;
 }
