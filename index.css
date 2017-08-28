@@ -76,9 +76,17 @@ a{
 
 .cancer-ads{
     width: 40%;
-    background: blue;
     position: relative;
     max-width: 720px;
+}
+
+.ad-container iframe{
+    height: 300px;
+}
+
+.ad-container{
+    display:flex;
+    justify-content: center;
 }
 
 @keyframes thrust{
